@@ -6,7 +6,7 @@ import 'package:http/http.dart' as http;
 
 
 Future<WeatherAlbum> fetchWeatherAlbum(String lat, String lon, String units) async {
-  String apiKey= "190308b128afbf13909a695d4ccbcb4d";
+  String apiKey= " ";
 
   final response = await http.get(
       Uri.parse("https://api.openweathermap.org/data/2.5/forecast/daily?cnt=16&lat=$lat&lon=$lon&appid=$apiKey&units=$units")
