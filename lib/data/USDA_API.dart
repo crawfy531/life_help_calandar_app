@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 
 
 Future<FoodAlbum> fetchFoodAlbum(String search, String dataType, String brand) async {
-  String apiKey= "yykJMrl8gtTN4xVIqUegtfPhdbYlp0JG66ObvjfL";
+  String apiKey= " ";
   String url = "https://api.nal.usda.gov/fdc/v1/foods/search?api_key=$apiKey&query=$search&sortOrder=desc&dataType=$dataType";
   if (dataType == "Branded" && brand != ''){
     url += "&brandOwner=$brand";
